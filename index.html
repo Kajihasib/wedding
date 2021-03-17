@@ -5,9 +5,84 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>William & Julia</title>
-		<link rel="stylesheet" href="" />
+		<link rel="stylesheet" href="assets/css/materialize.min.css" />
+		<link rel="stylesheet" href="assets/css/material-grid.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/slick.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
+		<link rel="stylesheet" href="assets/css/default.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
-		<h1>Wedding</h1>
+		<!-- header area start  -->
+		<header class="header_area">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-4">
+						<h1 class="logo d-flex align-items-center">
+							<a class="color-theme" href="index.html"
+								>William <span class="color-white">& Julia</span>
+								<img src="assets/images/logo.svg" alt=""
+							/></a>
+						</h1>
+					</div>
+					<div class="col-lg-8">
+						<ul class="mainmenu d-flex flex-wrap justify-content-end">
+							<li><a class="active" href="#home">Home</a></li>
+							<li><a href="#couple">Couple</a></li>
+							<li><a href="#story">Story</a></li>
+							<li><a href="#people">People</a></li>
+							<li><a href="#events">Events</a></li>
+							<li><a href="#gallery">Gallery</a></li>
+							<li><a href="#rsvp">RSVP</a></li>
+							<li><a href="#gift_registry">Gift Registry</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header area end  -->
+
+		<!-- hero area start  -->
+		<div class="hero_area">
+			<div class="slick_slider_active">
+				<img src="assets/images/sliders/slider1.jpg" alt="slider" />
+				<img src="assets/images/sliders/slider2.jpg" alt="slider" />
+			</div>
+			<div class="hero_content">
+				<img src="assets/images/shapes/hero.svg" alt="hero" />
+				<p class="text">Were Getting Married</p>
+				<h2 class="title">William & Julia</h2>
+				<h3 class="date">31.12.2022</h3>
+			</div>
+			<h2 class="big_day">The Big Day</h2>
+		</div>
+		<!-- hero area end  -->
+
+		<div class="countdown_area">
+			<div class="container">
+				<ul data-countdown="2021/06/30" class="countdown_date d-flex flex-wrap"></ul>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/materialize.min.js"></script>
+		<script src="assets/js/countdown.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/magnific-popup.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		<script>
+			$('[data-countdown]').each(function () {
+				var $this = $(this),
+					finalDate = $(this).data('countdown');
+				$this.countdown(finalDate, function (event) {
+					$this.html(
+						event.strftime(
+							'<li class="countdown_item days"><h4>%-D</h4><span>Days</span></li><li class="countdown_item hours"><h4>%-H</h4><span>Hours</span></li><li class="countdown_item minutes"><h4>%M</h4><span>Min</span></li><li class="countdown_item second"><h4>%S</h4><span>Sec</span></li>'
+						)
+					);
+				});
+			});
+		</script>
 	</body>
 </html>

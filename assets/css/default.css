@@ -13,11 +13,18 @@
 }
 
 .bg-theme {
-	background: #f05c26 !important;
+	background: #bea046 !important;
 }
 
 .color-theme {
-	color: #f05c26 !important;
+	color: #bea046 !important;
+}
+.bg-theme2 {
+	background: #ef185e !important;
+}
+
+.color-theme2 {
+	color: #ef185e !important;
 }
 
 .height-100 {
@@ -75,7 +82,7 @@
 }
 
 .hover-theme_bg:hover {
-	background: #f05c26 !important;
+	background: #bea046 !important;
 	color: #fff !important;
 }
 
@@ -532,37 +539,4 @@
 
 .obj-contain {
 	object-fit: contain !important;
-}
-
-.badge-wrap {
-	min-width: 80px;
-	min-height: 30px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 14px;
-	border-radius: 30px;
-	padding: 0px 15px;
-	font-weight: 400;
-	border: none;
-}
-
-.badge-wrap.theme-badge {
-	background: rgba(240, 92, 38, 0.05);
-	color: #f05c26;
-}
-
-.badge-wrap.success-badge {
-	background: rgba(14, 83, 140, 0.04);
-	color: #0e538c;
-}
-
-.badge-wrap.reject-badge {
-	background: rgba(253, 7, 66, 0.04);
-	color: #fd0742;
-}
-
-.badge-wrap.info-badge {
-	background: rgba(32, 176, 56, 0.1);
-	color: #20b038;
 }
