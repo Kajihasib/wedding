@@ -179,7 +179,7 @@ $themeColor: #bea046;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
-		background: url(../images/shapes/love.svg);
+		background: url(../images/shapes/love.svg) no-repeat center center / cover;
 		h4 {
 			font-size: 50px;
 			line-height: 40px;
