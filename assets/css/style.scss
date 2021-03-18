@@ -135,6 +135,16 @@ $themeColor: #bea046;
 		font-size: 75px;
 		color: #fff;
 		width: 100%;
+		.ampersand {
+			width: 1em;
+			margin-right: -0.1em;
+			margin-left: -0.1em;
+		}
+
+		.letters {
+			display: inline-block;
+			opacity: 0;
+		}
 	}
 	.date {
 		color: #fff;

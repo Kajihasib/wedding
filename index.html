@@ -53,6 +53,7 @@
 				<img src="assets/images/shapes/hero.png" alt="hero" />
 				<p class="text">Were Getting Married</p>
 				<h2 class="title">William & Julia</h2>
+
 				<h3 class="date">31.12.2022</h3>
 			</div>
 			<h2 class="big_day">The Big Day</h2>
@@ -68,21 +69,9 @@
 		<script src="assets/js/jquery-3.2.1.min.js"></script>
 		<script src="assets/js/materialize.min.js"></script>
 		<script src="assets/js/countdown.min.js"></script>
+		<script src="assets/js/anime.min.js"></script>
 		<script src="assets/js/slick.min.js"></script>
 		<script src="assets/js/magnific-popup.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
-		<script>
-			$('[data-countdown]').each(function () {
-				var $this = $(this),
-					finalDate = $(this).data('countdown');
-				$this.countdown(finalDate, function (event) {
-					$this.html(
-						event.strftime(
-							'<li class="countdown_item days"><h4>%-D</h4><span>Days</span></li><li class="countdown_item hours"><h4>%-H</h4><span>Hours</span></li><li class="countdown_item minutes"><h4>%M</h4><span>Min</span></li><li class="countdown_item second"><h4>%S</h4><span>Sec</span></li>'
-						)
-					);
-				});
-			});
-		</script>
 	</body>
 </html>
