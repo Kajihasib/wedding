@@ -230,6 +230,9 @@
 .pb-15 {
 	padding-bottom: 15px;
 }
+.pb-90 {
+	padding-bottom: 90px;
+}
 .fi {
 	font-style: italic;
 }
@@ -273,6 +276,9 @@
 }
 .ptb-100 {
 	padding: 100px 0px !important;
+}
+.ptb-120 {
+	padding: 120px 0px !important;
 }
 .pb-45 {
 	padding-bottom: 45px !important;

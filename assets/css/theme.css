@@ -359,7 +359,7 @@ body .input-field.input-field-icon .field-icon {
 .btnStyle {
 	min-height: 40px;
 	min-width: 135px;
-	padding: 5px 25px 8px;
+	padding: 6px 25px;
 	background: #bea046;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -374,6 +374,7 @@ body .input-field.input-field-icon .field-icon {
 	color: #fff;
 	border-radius: 40px;
 	cursor: pointer;
+	font-family: 'Courgette', cursive;
 }
 .btnStyle:disabled {
 	background: #dbdbdb !important;
@@ -405,10 +406,6 @@ body .input-field.input-field-icon .field-icon {
 	color: #bea046;
 }
 
-.btnStyle.btnStyleOutline {
-	background: #fff;
-}
-
 .btnStyle.btnStyleOutline:hover,
 .btnStyle.btnStyleOutline:focus {
 	background: #bea046;
@@ -417,7 +414,7 @@ body .input-field.input-field-icon .field-icon {
 
 .btnStyle.btnStyleWhite {
 	background: #fff;
-	color: #bea046;
+	color: #1e1e1e;
 	border-color: #fff;
 	padding: 8px 30px;
 }

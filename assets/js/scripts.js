@@ -75,7 +75,10 @@
 		});
 	});
 	// material
-	$('.tabs').tabs();
+	$('.tabs').tabs({
+		swipeable: true,
+		responsiveThreshold: Infinity,
+	});
 	$('.collapsible').collapsible();
 	$('.modal').modal();
 	$('.dropdown-profile').dropdown();
@@ -83,13 +86,13 @@
 	$('.tooltipped').tooltip();
 })(jQuery);
 
-var textWrapper = document.querySelector('.textgit ');
+var textWrapper = document.querySelector('.text');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime
 	.timeline({ loop: true })
 	.add({
-		targets: '.textgit  .letter',
+		targets: '.text .letter',
 		translateX: [40, 0],
 		translateZ: 0,
 		opacity: [0, 1],
@@ -98,7 +101,7 @@ anime
 		delay: (el, i) => 500 + 30 * i,
 	})
 	.add({
-		targets: '.textgit  .letter',
+		targets: '.text .letter',
 		translateX: [0, -30],
 		opacity: [1, 0],
 		easing: 'easeInExpo',
