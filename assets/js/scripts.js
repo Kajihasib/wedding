@@ -74,6 +74,49 @@
 			);
 		});
 	});
+
+	// onepage scroll
+	$(function () {
+		let header_height = $('.header_area').innerHeight();
+		$(window).on('scroll', function () {
+			let WindowTop = $(window).scrollTop();
+			let sticky = $('.header_area');
+
+			if (WindowTop >= 10) {
+				sticky.addClass('sticky_header');
+			} else {
+				sticky.removeClass('sticky_header');
+			}
+			$('section').each(function (i) {
+				if (
+					WindowTop > $(this).offset().top - header_height &&
+					WindowTop < $(this).offset().top + $(this).outerHeight(true)
+				) {
+					$('.mainmenu > li > a').removeClass('active');
+					$('.mainmenu li').eq(i).find('a').addClass('active');
+				}
+			});
+		});
+		$(document).on('click', 'a[href^=\\#]', function () {
+			if (
+				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+				location.hostname == this.hostname
+			) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html,body').animate(
+						{
+							scrollTop: target.offset().top - header_height + 1,
+						},
+						1000
+					);
+					return false;
+				}
+			}
+		});
+	});
+
 	// material
 	$('.tabs').tabs({
 		swipeable: true,
